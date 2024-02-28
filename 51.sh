@@ -37,7 +37,7 @@ conda install -c conda-forge git python=3.11 pip gxx ffmpeg --solver=libmamba -y
  
  cd ${SD51_DIR}/facefusion 
  pip install -r requirements.txt 
- Python Install.py --torch cuda-11.8 --onnxruntime cuda-11.8
+ Python3 Install.py --torch cuda-11.8 --onnxruntime cuda-11.8
  export GRADIO_SERVER_NAME=0.0.0.0 
  export GRADIO_SERVER_PORT=9000 
  CMD="python3 run.py"; while IFS= read -r param; do if [[ $param != \#* ]]; then CMD+=" ${param}"; fi; done < "${SD51_DIR}/parameters.txt"; eval $CMD
