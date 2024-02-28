@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   stable-diffusion-test:
-    image: holaflenain/stable-diffusion:latest
+    image: codex966/stable-diffusion:latest
     container_name: stable-diffusion
     environment:
       - WEBUI_VERSION=51
