@@ -4,7 +4,7 @@ services:
     image: holaflenain/stable-diffusion:latest
     container_name: stable-diffusion
     environment:
-      - WEBUI_VERSION=01
+      - WEBUI_VERSION=51
       - NVIDIA_VISIBLE_DEVICES=all
       - TZ=Europe/Paris
       - PUID=1000
